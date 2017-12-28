@@ -1,0 +1,84 @@
+.trigger {
+  border: 2px solid #2196F3;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
+
+.content {
+  background: #fff;
+  border: 2px solid #2196F3;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.item {
+  padding: 10px;
+  transition: background .1s linear;
+  
+  &:hover {
+    background: #2196F3;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  box-shadow: 0 4px 10px rgba(#7C4DFF, .2);
+  margin: 50px auto;
+  outline: none;
+  position: relative;
+  left: -28rem;
+  transition: box-shadow .1s linear;
+  width: 300px;
+  
+  &.active {
+    box-shadow: 0 10px 30px rgba(#7C4DFF, .2);
+  }
+  
+  &:hover > .trigger,
+  &.active > .trigger {
+    background: #2196F3;
+    color: #fff;
+  }
+  
+  &.active > .trigger {
+    background: #2196F3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #fff;
+  }
+}
+
+/* Styling not related to the demonstrated feature */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+}
+
+body * {
+  color: #212121;
+  font-family: "Titillium Web";
+  font-size: 16px;
+}
+
+.container {
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  margin: 2rem auto;
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+p {
+  line-height: 1.5;
+}
