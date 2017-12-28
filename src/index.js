@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Dropdown from './Components/ui-components/Dropdown';
 import css from './css/app.scss'
+import Dropdown from './Components/ui-components/Dropdown';
+import Header from './Components/ui-components/Header';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class App extends React.Component {
     return(
       <div>
         <Dropdown />
+        <Header />
       </div>
     );
   }
